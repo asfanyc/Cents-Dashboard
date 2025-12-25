@@ -91,25 +91,26 @@
   </div>
 
   <script>
-    // Mocked data — replace later with real API data
-    const data = {
-      newCustomers: 4,
-      newOrders: 12,
-      ordersToday: 38,
-      pickupsToday: 21,
-      exceptions: 2,
-      lateOrders: 1
-    };
+  // Mocked data — replace later with real API data
+  const data = {
+    newCustomers: 4,
+    newOrders: 12,
+    ordersToday: 38,
+    pickupsToday: 21,
+    exceptions: 2,
+    lateOrders: 1
+  };
 
-    document.getElementById("newCustomers").innerText = data.newCustomers;
-    document.getElementById("newOrders").innerText = data.newOrders;
-    document.getElementById("ordersToday").innerText = data.ordersToday;
-    document.getElementById("pickupsToday").innerText = data.pickupsToday;
-    document.getElementById("exceptions").innerText = data.exceptions;
-    document.getElementById("lateOrders").innerText = data.lateOrders;
-    document.getElementById("lastSync").innerText =
-      new Date().toLocaleString();
-  </script>
+  document.getElementById("newCustomers").innerText = data.newCustomers;
+  document.getElementById("newOrders").innerText = data.newOrders;
+  document.getElementById("ordersToday").innerText = data.ordersToday;
+  document.getElementById("pickupsToday").innerText = data.pickupsToday;
+  document.getElementById("exceptions").innerText = data.exceptions;
+  document.getElementById("lateOrders").innerText = data.lateOrders;
+  document.getElementById("lastSync").innerText =
+    new Date().toLocaleString();
+</script>
+
 
 </body>
 </html>
