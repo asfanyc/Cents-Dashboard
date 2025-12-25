@@ -1,30 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Owner Dashboard</title>
-    <style>
-      body { font-family: Arial; padding: 30px; }
-      .card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 16px;
-        margin-bottom: 12px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Owner Dashboard</h1>
-    <p>Status: <strong>Live</strong></p>
+<head>
+  <meta charset="utf-8" />
+  <title>Owner Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f7f7f7;
+    }
+    h1 {
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .value {
+      font-size: 28px;
+      margin-top: 8px;
+    }
+    .footer {
+      margin-top: 30px;
+      color: #666;
+      font-size: 14px;
+    }
+    .logout {
+      float: right;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="logout" href="/.auth/logout">Logout</a>
+
+  <h1>Owner Dashboard</h1>
+  <div class="subtitle">Daily Operations Overview</div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>New Customers</h3>
+      <div class="value" id="newCustomers">—</div>
+    </div>
+
+    <div class="card">
+      <h3>New Orders</h3>
+      <div class="value" id="newOrders">—</div>
+    </div>
+
+    <div class="card">
+      <h3>Orders Today</h3>
+      <div class="value" id="ordersToday">—</div>
+    </div>
 
     <div class="card">
       <h3>Pickups Today</h3>
-      <p>—</p>
+      <div class="value" id="pickupsToday">—</div>
     </div>
 
     <div class="card">
-      <h3>Deliveries Today</h3>
-      <p>—</p>
+      <h3>Exceptions</h3>
+      <div class="value" id="exceptions">—</div>
     </div>
-  </body>
+
+    <div class="card">
+      <h3>Late Orders</h3>
+      <div class="value" id="lateOrders">—</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Last Sync: <span id="lastSync">—</span>
+  </div>
+
+  <script>
+    // Mocked data — replace later with real API data
+    const data = {
+      newCustomers: 4,
+      newOrders: 12,
+      ordersToday: 38,
+      pickupsToday: 21,
+      exceptions: 2,
+      lateOrders: 1
+    };
+
+    document.getElementById("newCustomers").innerText = data.newCustomers;
+    document.getElementById("newOrders").innerText = data.newOrders;
+    document.getElementById("ordersToday").innerText = data.ordersToday;
+    document.getElementById("pickupsToday").innerText = data.pickupsToday;
+    document.getElementById("exceptions").innerText = data.exceptions;
+    document.getElementById("lateOrders").innerText = data.lateOrders;
+    document.getElementById("lastSync").innerText =
+      new Date().toLocaleString();
+  </script>
+
+</body>
 </html>
