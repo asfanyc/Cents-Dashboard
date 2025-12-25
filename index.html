@@ -90,26 +90,32 @@
     Last Sync: <span id="lastSync">—</span>
   </div>
 
-  <script>
-  // Mocked data — replace later with real API data
-  const data = {
-    newCustomers: 4,
-    newOrders: 12,
-    ordersToday: 38,
-    pickupsToday: 21,
-    exceptions: 2,
-    lateOrders: 1
-  };
+<script>
+  // Static mocked values (for now)
+  document.getElementById("newCustomers").innerText = 4;
+  document.getElementById("newOrders").innerText = 12;
+  document.getElementById("pickupsToday").innerText = 21;
+  document.getElementById("exceptions").innerText = 2;
+  document.getElementById("lateOrders").innerText = 1;
 
-  document.getElementById("newCustomers").innerText = data.newCustomers;
-  document.getElementById("newOrders").innerText = data.newOrders;
-  document.getElementById("ordersToday").innerText = data.ordersToday;
-  document.getElementById("pickupsToday").innerText = data.pickupsToday;
-  document.getElementById("exceptions").innerText = data.exceptions;
-  document.getElementById("lateOrders").innerText = data.lateOrders;
-  document.getElementById("lastSync").innerText =
-    new Date().toLocaleString();
+  // Real data: Orders Today
+  fetch("/data/orders.json")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("ordersToday").innerText =
+        data.ordersToday;
+
+      const syncTime = new Date(data.lastSync);
+      document.getElementById("lastSync").innerText =
+        syncTime.toLocaleString();
+    })
+    .catch(err => {
+      document.getElementById("ordersToday").innerText = "—";
+      document.getElementById("lastSync").innerText = "Sync error";
+      console.error("Failed to load orders.json", err);
+    });
 </script>
+
 
 
 </body>
