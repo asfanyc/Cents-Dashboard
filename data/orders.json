@@ -1,1 +1,5 @@
-{"date":"Date","ordersToday":null,"lastSync":"Timestamp"}
+{
+  "date": "2025-12-25",
+  "ordersToday": 42,
+  "lastSync": "2025-12-25T21:05:00Z"
+}
