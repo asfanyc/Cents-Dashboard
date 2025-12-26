@@ -1,0 +1,8 @@
+{
+  "ordersToday": 42,
+  "pickupsToday": 18,
+  "deliveriesToday": 21,
+  "lateOrders": 3,
+  "exceptions": 2,
+  "lastSync": "2025-12-25T21:05:00Z"
+}
