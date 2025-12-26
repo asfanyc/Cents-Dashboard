@@ -91,30 +91,22 @@
   </div>
 
 <script>
-  // Static mocked values (for now)
-  document.getElementById("newCustomers").innerText = 4;
-  document.getElementById("newOrders").innerText = 12;
-  document.getElementById("pickupsToday").innerText = 21;
-  document.getElementById("exceptions").innerText = 2;
-  document.getElementById("lateOrders").innerText = 1;
-
-  // Real data: Orders Today
-  fetch("/data/orders.json")
+  // Fetch high-level metrics
+  fetch("/data/metrics.json")
     .then(res => res.json())
-    .then(data => {
-      document.getElementById("ordersToday").innerText =
-        data.ordersToday;
-
-      const syncTime = new Date(data.lastSync);
+    .then(metrics => {
+      document.getElementById("ordersToday").innerText = metrics.ordersToday;
+      document.getElementById("pickupsToday").innerText = metrics.pickupsToday;
+      document.getElementById("exceptions").innerText = metrics.exceptions;
+      document.getElementById("lateOrders").innerText = metrics.lateOrders;
       document.getElementById("lastSync").innerText =
-        syncTime.toLocaleString();
+        new Date(metrics.lastSync).toLocaleString();
     })
     .catch(err => {
-      document.getElementById("ordersToday").innerText = "—";
-      document.getElementById("lastSync").innerText = "Sync error";
-      console.error("Failed to load orders.json", err);
+      console.error("Failed to load metrics.json", err);
     });
 </script>
+
 
 
 
