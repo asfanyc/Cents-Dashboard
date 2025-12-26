@@ -1,0 +1,16 @@
+{
+  "newCustomersToday": 5,
+  "customers": [
+    {
+      "name": "Alex Rivera",
+      "signupSource": "Web",
+      "orderId": "ORD-10295"
+    },
+    {
+      "name": "Sara Lee",
+      "signupSource": "iOS App",
+      "orderId": "ORD-10296"
+    }
+  ],
+  "lastSync": "2025-12-25T21:05:00Z"
+}
