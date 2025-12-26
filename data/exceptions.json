@@ -1,0 +1,16 @@
+{
+  "count": 2,
+  "exceptions": [
+    {
+      "orderId": "ORD-10277",
+      "type": "Payment Failed",
+      "severity": "High"
+    },
+    {
+      "orderId": "ORD-10280",
+      "type": "Address Issue",
+      "severity": "Medium"
+    }
+  ],
+  "lastSync": "2025-12-25T21:05:00Z"
+}
