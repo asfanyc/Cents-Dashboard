@@ -1,24 +1,24 @@
 {
-  "date_et": "2025-12-26",
-  "generated_at": "2025-12-26T22:10:41.463Z",
+  "date_et": "2025-12-30",
+  "generated_at": "2025-12-30T20:57:29.414Z",
   "source": "cents_webhooks",
   "orders": [
     {
-      "id": "test-123",
-      "created_at": "2025-12-26T20:14:54.5699459Z",
-      "status": "created",
-      "store_id": "store-1",
+      "id": "5531440",
+      "created_at": "2025-12-30T20:57:29.213Z",
+      "status": "PROCESSING",
+      "store_id": "unknown",
       "customer_id": "unknown",
-      "customer_name": "TestUser",
-      "pickup_type": "pickup",
+      "customer_name": "Unknown",
+      "pickup_type": "unknown",
       "total_cents": 0,
-      "service": "wash_fold"
+      "service": "unknown"
     }
   ],
   "summary": {
     "orders_count": 1,
     "by_status": {
-      "created": 1
+      "PROCESSING": 1
     },
     "total_cents": 0
   }
