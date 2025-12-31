@@ -91,21 +91,47 @@
   </div>
 
 <script>
-  // Fetch high-level metrics
-  fetch("/data/metrics.json")
+  const ORDERS_URL =
+    "https://raw.githubusercontent.com/asfanyc/Cents-Dashboard/main/data/orders_today.json?t=" + Date.now();
+
+  fetch(ORDERS_URL, { cache: "no-store" })
     .then(res => res.json())
-    .then(metrics => {
-      document.getElementById("ordersToday").innerText = metrics.ordersToday;
-      document.getElementById("pickupsToday").innerText = metrics.pickupsToday;
-      document.getElementById("exceptions").innerText = metrics.exceptions;
-      document.getElementById("lateOrders").innerText = metrics.lateOrders;
-      document.getElementById("lastSync").innerText =
-        new Date(metrics.lastSync).toLocaleString();
+    .then(data => {
+      const orders = Array.isArray(data.orders) ? data.orders : [];
+
+      // Basic metrics — adjust if your definitions differ
+      const ordersToday = orders.length;
+
+      // Pickups Today: count orders in READY_FOR_PICKUP
+      const pickupsToday = orders.filter(o => o.status === "READY_FOR_PICKUP").length;
+
+      // Exceptions: count orders in an exception status (tweak as needed)
+      const exceptionStatuses = new Set(["EXCEPTION", "ON_HOLD", "CANCELLED"]);
+      const exceptions = orders.filter(o => exceptionStatuses.has(o.status)).length;
+
+      // Late Orders: if you track due_date, count overdue
+      // If you don't have due_date in orders_today.json, set to 0 for now
+      const now = new Date();
+      const lateOrders = orders.filter(o => {
+        if (!o.due_date) return false;
+        const due = new Date(o.due_date);
+        return !isNaN(due) && due < now && o.status !== "COMPLETED";
+      }).length;
+
+      document.getElementById("ordersToday").innerText = ordersToday;
+      document.getElementById("pickupsToday").innerText = pickupsToday;
+      document.getElementById("exceptions").innerText = exceptions;
+      document.getElementById("lateOrders").innerText = lateOrders;
+
+      // Use generated_at from the JSON if present
+      const lastSync = data.generated_at ? new Date(data.generated_at) : new Date();
+      document.getElementById("lastSync").innerText = lastSync.toLocaleString();
     })
     .catch(err => {
-      console.error("Failed to load metrics.json", err);
+      console.error("Failed to load orders_today.json", err);
     });
 </script>
+
 
 
 
