@@ -102,8 +102,17 @@
       // Basic metrics — adjust if your definitions differ
       const ordersToday = orders.length;
 
-      // Pickups Today: count orders in READY_FOR_PICKUP
-      const pickupsToday = orders.filter(o => o.status === "READY_FOR_PICKUP").length;
+     // Pickups Today: count orders in any of these statuses (edit as needed)
+      const pickupStatuses = new Set([
+      "READY_FOR_PICKUP",
+      "OUT_FOR_PICKUP",
+      "PICKUP_SCHEDULED",
+      "PICKUP_REQUESTED",
+      "IN_TRANSIT",          // if you use it
+      "OUT_FOR_DELIVERY"     // include if your "pickups" card is really "in motion"
+   ]);
+
+const pickupsToday = orders.filter(o => pickupStatuses.has(o.status)).length;
 
       // Exceptions: count orders in an exception status (tweak as needed)
       const exceptionStatuses = new Set(["EXCEPTION", "ON_HOLD", "CANCELLED"]);
