@@ -91,55 +91,69 @@
   </div>
 
 <script>
-  const ORDERS_URL =
-    "https://raw.githubusercontent.com/asfanyc/Cents-Dashboard/main/data/orders_today.json?t=" + Date.now();
+  const ORDERS_BASE =
+    "https://raw.githubusercontent.com/asfanyc/Cents-Dashboard/main/data/orders_today.json";
 
-  fetch(ORDERS_URL, { cache: "no-store" })
-    .then(res => res.json())
-    .then(data => {
-      const orders = Array.isArray(data.orders) ? data.orders : [];
+  function loadOrders() {
+    const ORDERS_URL = ORDERS_BASE + "?t=" + Date.now();
 
-      // Basic metrics — adjust if your definitions differ
-      const ordersToday = orders.length;
-
-     // Pickups Today: count orders in any of these statuses (edit as needed)
-      const pickupStatuses = new Set([
-      "READY_FOR_PICKUP",
-      "OUT_FOR_PICKUP",
-      "PICKUP_SCHEDULED",
-      "PICKUP_REQUESTED",
-      "IN_TRANSIT",          // if you use it
-      "OUT_FOR_DELIVERY"     // include if your "pickups" card is really "in motion"
-   ]);
-
-const pickupsToday = orders.filter(o => pickupStatuses.has(o.status)).length;
-
-      // Exceptions: count orders in an exception status (tweak as needed)
-      const exceptionStatuses = new Set(["EXCEPTION", "ON_HOLD", "CANCELLED"]);
-      const exceptions = orders.filter(o => exceptionStatuses.has(o.status)).length;
-
-      // Late Orders: if you track due_date, count overdue
-      // If you don't have due_date in orders_today.json, set to 0 for now
-      const now = new Date();
-      const lateOrders = orders.filter(o => {
-        if (!o.due_date) return false;
-        const due = new Date(o.due_date);
-        return !isNaN(due) && due < now && o.status !== "COMPLETED";
-      }).length;
-
-      document.getElementById("ordersToday").innerText = ordersToday;
-      document.getElementById("pickupsToday").innerText = pickupsToday;
-      document.getElementById("exceptions").innerText = exceptions;
-      document.getElementById("lateOrders").innerText = lateOrders;
-
-      // Use generated_at from the JSON if present
-      const lastSync = data.generated_at ? new Date(data.generated_at) : new Date();
-      document.getElementById("lastSync").innerText = lastSync.toLocaleString();
+    fetch(ORDERS_URL, {
+      cache: "no-store",
+      headers: {
+        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+        "Pragma": "no-cache"
+      }
     })
-    .catch(err => {
-      console.error("Failed to load orders_today.json", err);
-    });
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then(data => {
+        const orders = Array.isArray(data.orders) ? data.orders : [];
+
+        const ordersToday = orders.length;
+
+        const pickupStatuses = new Set([
+          "READY_FOR_PICKUP",
+          "OUT_FOR_PICKUP",
+          "PICKUP_SCHEDULED",
+          "PICKUP_REQUESTED",
+          "IN_TRANSIT",
+          "OUT_FOR_DELIVERY"
+        ]);
+
+        const pickupsToday = orders.filter(o => pickupStatuses.has(o.status)).length;
+
+        const exceptionStatuses = new Set(["EXCEPTION", "ON_HOLD", "CANCELLED"]);
+        const exceptions = orders.filter(o => exceptionStatuses.has(o.status)).length;
+
+        const now = new Date();
+        const lateOrders = orders.filter(o => {
+          if (!o.due_date) return false;
+          const due = new Date(o.due_date);
+          return !isNaN(due) && due < now && o.status !== "COMPLETED";
+        }).length;
+
+        document.getElementById("ordersToday").innerText = ordersToday;
+        document.getElementById("pickupsToday").innerText = pickupsToday;
+        document.getElementById("exceptions").innerText = exceptions;
+        document.getElementById("lateOrders").innerText = lateOrders;
+
+        const lastSync = data.generated_at ? new Date(data.generated_at) : new Date();
+        document.getElementById("lastSync").innerText = lastSync.toLocaleString();
+      })
+      .catch(err => {
+        console.error("Failed to load orders_today.json", err);
+      });
+  }
+
+  // 1) Load once immediately
+  loadOrders();
+
+  // 2) Refresh every 15 seconds (adjust if you want)
+  setInterval(loadOrders, 15000);
 </script>
+
 
 
 
