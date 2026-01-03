@@ -140,7 +140,9 @@
         document.getElementById("lateOrders").innerText = lateOrders;
 
         const lastSync = data.generated_at ? new Date(data.generated_at) : new Date();
-        document.getElementById("lastSync").innerText = lastSync.toLocaleString();
+        document.getElementById("lastSync").innerText =
+        lastSync.toLocaleString("en-US", { timeZone: "America/New_York", timeZoneName: "short" });
+
       })
       .catch(err => {
         console.error("Failed to load orders_today.json", err);
