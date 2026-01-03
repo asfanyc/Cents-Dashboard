@@ -94,67 +94,73 @@
   const ORDERS_BASE =
     "https://raw.githubusercontent.com/asfanyc/Cents-Dashboard/main/data/orders_today.json";
 
-  function loadOrders() {
-    const ORDERS_URL = ORDERS_BASE + "?t=" + Date.now();
-
-    fetch(ORDERS_URL, {
-      cache: "no-store",
-      headers: {
-        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
-        "Pragma": "no-cache"
-      }
-    })
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
-      .then(data => {
-        const orders = Array.isArray(data.orders) ? data.orders : [];
-
-        const ordersToday = orders.length;
-
-        const pickupStatuses = new Set([
-          "READY_FOR_PICKUP",
-          "OUT_FOR_PICKUP",
-          "PICKUP_SCHEDULED",
-          "PICKUP_REQUESTED",
-          "IN_TRANSIT",
-          "OUT_FOR_DELIVERY"
-        ]);
-
-        const pickupsToday = orders.filter(o => pickupStatuses.has(o.status)).length;
-
-        const exceptionStatuses = new Set(["EXCEPTION", "ON_HOLD", "CANCELLED"]);
-        const exceptions = orders.filter(o => exceptionStatuses.has(o.status)).length;
-
-        const now = new Date();
-        const lateOrders = orders.filter(o => {
-          if (!o.due_date) return false;
-          const due = new Date(o.due_date);
-          return !isNaN(due) && due < now && o.status !== "COMPLETED";
-        }).length;
-
-        document.getElementById("ordersToday").innerText = ordersToday;
-        document.getElementById("pickupsToday").innerText = pickupsToday;
-        document.getElementById("exceptions").innerText = exceptions;
-        document.getElementById("lateOrders").innerText = lateOrders;
-
-        const lastSync = data.generated_at ? new Date(data.generated_at) : new Date();
-        document.getElementById("lastSync").innerText =
-        lastSync.toLocaleString("en-US", { timeZone: "America/New_York", timeZoneName: "short" });
-
-      })
-      .catch(err => {
-        console.error("Failed to load orders_today.json", err);
-      });
+  function $(id) {
+    return document.getElementById(id);
   }
 
-  // 1) Load once immediately
-  loadOrders();
+  function setText(id, value) {
+    const el = $(id);
+    if (!el) {
+      console.error(`Missing element id="${id}" in HTML`);
+      return false;
+    }
+    el.innerText = value;
+    return true;
+  }
 
-  // 2) Refresh every 15 seconds (adjust if you want)
-  setInterval(loadOrders, 15000);
+  async function loadOrders() {
+    const url = `${ORDERS_BASE}?t=${Date.now()}`;
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Fetch failed ${res.status} for ${url}`);
+      const data = await res.json();
+
+      const orders = Array.isArray(data.orders) ? data.orders : [];
+      const ordersToday = orders.length;
+
+      const pickupStatuses = new Set([
+        "READY_FOR_PICKUP",
+        "OUT_FOR_PICKUP",
+        "PICKUP_SCHEDULED",
+        "PICKUP_REQUESTED",
+        "IN_TRANSIT",
+        "OUT_FOR_DELIVERY"
+      ]);
+
+      const pickupsToday = orders.filter(o => pickupStatuses.has(o.status)).length;
+
+      const exceptionStatuses = new Set(["EXCEPTION", "ON_HOLD", "CANCELLED"]);
+      const exceptions = orders.filter(o => exceptionStatuses.has(o.status)).length;
+
+      const now = new Date();
+      const lateOrders = orders.filter(o => {
+        if (!o.due_date) return false;
+        const due = new Date(o.due_date);
+        return !isNaN(due) && due < now && o.status !== "COMPLETED";
+      }).length;
+
+      setText("ordersToday", ordersToday);
+      setText("pickupsToday", pickupsToday);
+      setText("exceptions", exceptions);
+      setText("lateOrders", lateOrders);
+
+      const lastSync = data.generated_at ? new Date(data.generated_at) : new Date();
+      setText("lastSync", lastSync.toLocaleString());
+
+      console.log("Loaded orders_today.json OK:", { ordersToday, pickupsToday, exceptions, lateOrders, generated_at: data.generated_at });
+    } catch (err) {
+      console.error("Dashboard loadOrders error:", err);
+    }
+  }
+
+  // Run after page is loaded
+  window.addEventListener("load", () => {
+    loadOrders();
+    // optional auto-refresh:
+    setInterval(loadOrders, 15000);
+  });
 </script>
+
 
 
 
