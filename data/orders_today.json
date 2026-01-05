@@ -1,21 +1,21 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-05T21:11:21.326Z",
+  "generated_at": "2026-01-05T21:24:49.641Z",
   "source": "cents_webhooks",
   "orders": [
     {
       "id": "5558860",
-      "status": "READY_FOR_INTAKE",
+      "status": "PROCESSING",
       "store_id": "1524",
       "customer_id": "1859284",
       "customer_name": "Sarah Lowe",
       "pickup_type": "DELIVERY",
       "service": "ONLINE",
       "type": "ONLINEONLINE",
-      "total_cents": 6850,
+      "total_cents": 12050,
       "created_at": "2026-01-03T19:26:51.735Z2026-01-03T19:26:51.735Z",
       "placed_at": "2026-01-03T19:26:51.735Z",
-      "updated_at": "2026-01-05T21:10:11.987Z",
+      "updated_at": "2026-01-05T21:23:39.548Z",
       "due_date": "2026-01-08T19:00:00.000Z",
       "source_event": "order_updated"
     }
@@ -23,8 +23,8 @@
   "summary": {
     "orders_count": 1,
     "by_status": {
-      "READY_FOR_INTAKE": 1
+      "PROCESSING": 1
     },
-    "total_cents": 6850
+    "total_cents": 12050
   }
 }
