@@ -118,6 +118,63 @@
     return true;
   }
 
+  function esc(s) {
+    return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[c]));
+  }
+
+  function fmtDT(iso) {
+    if (!iso) return "";
+    const d = new Date(iso);
+    return isNaN(d) ? String(iso) : d.toLocaleString();
+  }
+
+  function renderOrdersTable(targetId, rows) {
+    const el = $(targetId);
+    if (!el) return;
+
+    if (!rows || rows.length === 0) {
+      el.innerHTML = `<div class="subtitle">No orders</div>`;
+      return;
+    }
+
+    el.innerHTML = `
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left; padding:8px; border-bottom:1px solid #eee;">Customer</th>
+            <th style="text-align:left; padding:8px; border-bottom:1px solid #eee;">Order #</th>
+            <th style="text-align:left; padding:8px; border-bottom:1px solid #eee;">Due date</th>
+            <th style="text-align:left; padding:8px; border-bottom:1px solid #eee;">Service type</th>
+            <th style="text-align:left; padding:8px; border-bottom:1px solid #eee;">Delivery/Pickup</th>
+            <th style="text-align:left; padding:8px; border-bottom:1px solid #eee;">Status</th>
+            <th style="text-align:left; padding:8px; border-bottom:1px solid #eee;">Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(o => `
+            <tr>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.customer_name || "unknown")}</td>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.id || "")}</td>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(fmtDT(o.due_date))}</td>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.type || o.service || "")}</td>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.pickup_type || "unknown")}</td>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.status || "")}</td>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(fmtDT(o.updated_at))}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    `;
+  }
+
+  function sortByIsoDesc(fieldA, fieldB) {
+    return (a, b) =>
+      (Date.parse(b?.[fieldA] || b?.[fieldB] || 0) || 0) -
+      (Date.parse(a?.[fieldA] || a?.[fieldB] || 0) || 0);
+  }
+
   async function loadOrders() {
     const url = `${ORDERS_BASE}?t=${Date.now()}`;
     try {
@@ -149,24 +206,41 @@
         return !isNaN(due) && due < now && o.status !== "COMPLETED";
       }).length;
 
+      // KPI cards
+      const newOrdersCount = orders.filter(o => o.source_event === "order_created").length;
+
+      setText("newOrders", newOrdersCount);
       setText("ordersToday", ordersToday);
       setText("pickupsToday", pickupsToday);
       setText("exceptions", exceptions);
       setText("lateOrders", lateOrders);
 
+      // Details tables
+      const newOrders = orders
+        .filter(o => o.source_event === "order_created")
+        .sort(sortByIsoDesc("placed_at", "created_at"));
+
+      const updatedOrders = orders
+        .filter(o => o.source_event && o.source_event !== "order_created")
+        .sort(sortByIsoDesc("updated_at", "placed_at"));
+
+      renderOrdersTable("newOrdersWrap", newOrders);
+      renderOrdersTable("updatedOrdersWrap", updatedOrders);
+
       const lastSync = data.generated_at ? new Date(data.generated_at) : new Date();
       setText("lastSync", lastSync.toLocaleString());
 
-      console.log("Loaded orders_today.json OK:", { ordersToday, pickupsToday, exceptions, lateOrders, generated_at: data.generated_at });
+      console.log("Loaded orders_today.json OK:", {
+        newOrdersCount, ordersToday, pickupsToday, exceptions, lateOrders,
+        generated_at: data.generated_at
+      });
     } catch (err) {
       console.error("Dashboard loadOrders error:", err);
     }
   }
 
-  // Run after page is loaded
   window.addEventListener("load", () => {
     loadOrders();
-    // optional auto-refresh:
     setInterval(loadOrders, 15000);
   });
 </script>
