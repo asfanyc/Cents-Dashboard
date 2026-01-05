@@ -1,22 +1,22 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-05T22:03:34.162Z",
+  "generated_at": "2026-01-05T22:26:46.123Z",
   "source": "cents_webhooks",
   "orders": [
     {
-      "id": "5554087",
+      "id": "5523476",
       "status": "COMPLETED",
       "store_id": "1524",
-      "customer_id": "651568",
-      "customer_name": "Jesse Kaufmann",
+      "customer_id": "1421408",
+      "customer_name": "Michael  Araujo",
       "pickup_type": "unknown",
       "service": "SERVICE",
       "type": "SERVICESERVICE",
-      "total_cents": 2850,
-      "created_at": "2026-01-03T13:36:56.883Z2026-01-03T13:36:56.883Z",
-      "placed_at": "2026-01-03T13:36:56.883Z",
-      "updated_at": "2026-01-05T22:02:03.525Z",
-      "due_date": "2026-01-04T13:36:56.910Z",
+      "total_cents": 800,
+      "created_at": "2025-12-29T23:00:07.983Z2025-12-29T23:00:07.983Z",
+      "placed_at": "2025-12-29T23:00:07.983Z",
+      "updated_at": "2026-01-05T22:25:36.946Z",
+      "due_date": "2026-01-01T23:00:08.067Z",
       "source_event": "order_updated"
     }
   ],
@@ -25,6 +25,6 @@
     "by_status": {
       "COMPLETED": 1
     },
-    "total_cents": 2850
+    "total_cents": 800
   }
 }
