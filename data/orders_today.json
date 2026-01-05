@@ -1,6 +1,6 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-05T22:26:46.123Z",
+  "generated_at": "2026-01-05T22:35:06.934Z",
   "source": "cents_webhooks",
   "orders": [
     {
@@ -18,13 +18,29 @@
       "updated_at": "2026-01-05T22:25:36.946Z",
       "due_date": "2026-01-01T23:00:08.067Z",
       "source_event": "order_updated"
+    },
+    {
+      "id": "5554087",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "651568",
+      "customer_name": "Jesse Kaufmann",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2850,
+      "created_at": "2026-01-03T13:36:56.883Z",
+      "placed_at": "2026-01-03T13:36:56.883Z",
+      "updated_at": "2026-01-05T22:02:03.525Z",
+      "due_date": "2026-01-04T13:36:56.910Z",
+      "source_event": "order_updated"
     }
   ],
   "summary": {
-    "orders_count": 1,
+    "orders_count": 2,
     "by_status": {
-      "COMPLETED": 1
+      "COMPLETED": 2
     },
-    "total_cents": 800
+    "total_cents": 3650
   }
 }
