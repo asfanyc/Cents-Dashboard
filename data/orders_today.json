@@ -1,30 +1,30 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-05T20:44:00.391Z",
+  "generated_at": "2026-01-05T20:58:25.325Z",
   "source": "cents_webhooks",
   "orders": [
     {
-      "id": "5558860",
-      "status": "DRIVER_PICKED_UP_FROM_CUSTOMER",
+      "id": "5569170",
+      "status": "READY_FOR_PICKUP",
       "store_id": "1524",
-      "customer_id": "1859284",
-      "customer_name": "Sarah Lowe",
-      "pickup_type": "DELIVERY",
-      "service": "ONLINE",
-      "type": "ONLINEONLINE",
-      "total_cents": 6850,
-      "created_at": "2026-01-03T19:26:51.735Z2026-01-03T19:26:51.735Z",
-      "placed_at": "2026-01-03T19:26:51.735Z",
-      "updated_at": "2026-01-05T20:42:28.650Z",
-      "due_date": "2026-01-08T19:00:00.000Z",
+      "customer_id": "1399756",
+      "customer_name": "Gustavo Gustavo",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICESERVICE",
+      "total_cents": 5647,
+      "created_at": "2026-01-04T21:19:21.745Z2026-01-04T21:19:21.745Z",
+      "placed_at": "2026-01-04T21:19:21.745Z",
+      "updated_at": "2026-01-05T20:57:16.579Z",
+      "due_date": "2026-01-05T21:19:21.780Z",
       "source_event": "order_updated"
     }
   ],
   "summary": {
     "orders_count": 1,
     "by_status": {
-      "DRIVER_PICKED_UP_FROM_CUSTOMER": 1
+      "READY_FOR_PICKUP": 1
     },
-    "total_cents": 6850
+    "total_cents": 5647
   }
 }
