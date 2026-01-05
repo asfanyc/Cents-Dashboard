@@ -1,30 +1,30 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-05T14:55:02.652Z",
+  "generated_at": "2026-01-05T15:07:09.569Z",
   "source": "cents_webhooks",
   "orders": [
     {
-      "id": "5562509",
-      "status": "COMPLETED",
+      "id": "5559143",
+      "status": "EN_ROUTE_TO_CUSTOMER",
       "store_id": "1524",
-      "customer_id": "652075",
-      "customer_name": "REX LABALAN",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICESERVICE",
-      "total_cents": 3795,
-      "created_at": "2026-01-04T11:18:14.897Z2026-01-04T11:18:14.897Z",
-      "placed_at": "2026-01-04T11:18:14.897Z",
-      "updated_at": "2026-01-05T14:53:36.002Z",
-      "due_date": "2026-01-05T11:18:14.930Z",
+      "customer_id": "1447145",
+      "customer_name": "Mariele Berkowitz",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINEONLINE",
+      "total_cents": 14727,
+      "created_at": "2026-01-03T19:46:59.116Z2026-01-03T19:46:59.116Z",
+      "placed_at": "2026-01-03T19:46:59.116Z",
+      "updated_at": "2026-01-05T15:06:00.718Z",
+      "due_date": "2026-01-05T13:00:00.000Z",
       "source_event": "order_updated"
     }
   ],
   "summary": {
     "orders_count": 1,
     "by_status": {
-      "COMPLETED": 1
+      "EN_ROUTE_TO_CUSTOMER": 1
     },
-    "total_cents": 3795
+    "total_cents": 14727
   }
 }
