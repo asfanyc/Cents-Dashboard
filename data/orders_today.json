@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T01:59:28.154Z",
+  "generated_at": "2026-01-06T02:00:29.012Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5564891",
+      "status": "READY_FOR_DRIVER_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "1435665",
+      "customer_name": "Derrick Reaves",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 6860,
+      "created_at": "2026-01-04T17:01:44.661Z",
+      "placed_at": "2026-01-04T17:01:44.661Z",
+      "updated_at": "2026-01-06T01:59:06.602Z",
+      "due_date": "2026-01-06T10:00:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5573757",
       "status": "READY_FOR_PICKUP",
@@ -165,12 +181,13 @@
     }
   ],
   "summary": {
-    "orders_count": 10,
+    "orders_count": 11,
     "by_status": {
+      "READY_FOR_DRIVER_PICKUP": 1,
       "READY_FOR_PICKUP": 1,
       "PROCESSING": 3,
       "COMPLETED": 6
     },
-    "total_cents": 47548
+    "total_cents": 54408
   }
 }
