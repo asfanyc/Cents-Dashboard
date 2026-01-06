@@ -130,6 +130,27 @@
     return isNaN(d) ? String(iso) : d.toLocaleString();
   }
 
+  function pickupBadge(pickupType) {
+  const v = String(pickupType || "unknown").toUpperCase();
+  const isDelivery = v.includes("DELIVERY");
+  const isPickup = v.includes("PICKUP");
+
+  const bg = isDelivery ? "#e8f0ff" : isPickup ? "#e9fbe9" : "#f3f3f3";
+  const border = isDelivery ? "#6b8cff" : isPickup ? "#2e9d4d" : "#ccc";
+  const text = isDelivery ? "DELIVERY" : isPickup ? "PICKUP" : v;
+
+  return `<span style="
+    display:inline-block;
+    padding:2px 8px;
+    border-radius:999px;
+    border:1px solid ${border};
+    background:${bg};
+    font-weight:600;
+    font-size:12px;
+  ">${esc(text)}</span>`;
+}
+
+  
   function renderOrdersTable(targetId, rows) {
     const el = $(targetId);
     if (!el) return;
@@ -159,7 +180,7 @@
               <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.id || "")}</td>
               <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(fmtDT(o.due_date))}</td>
               <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.type || o.service || "")}</td>
-              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.pickup_type || "unknown")}</td>
+              <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${pickupBadge(o.pickup_type)}</td>
               <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(o.status || "")}</td>
               <td style="padding:8px; border-bottom:1px solid #f3f3f3;">${esc(fmtDT(o.updated_at))}</td>
             </tr>
