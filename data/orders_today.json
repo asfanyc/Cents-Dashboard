@@ -1,11 +1,11 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T14:20:46.392Z",
+  "generated_at": "2026-01-06T14:28:47.283Z",
   "source": "cents_webhooks",
   "orders": [
     {
       "id": "5564891",
-      "status": "EN_ROUTE_TO_CUSTOMER",
+      "status": "COMPLETED",
       "store_id": "unknown",
       "customer_id": "1435665",
       "customer_name": "Derrick Reaves",
@@ -15,7 +15,7 @@
       "total_cents": 6860,
       "created_at": "2026-01-04T17:01:44.661Z",
       "placed_at": "2026-01-04T17:01:44.661Z",
-      "updated_at": "2026-01-06T14:19:36.251Z",
+      "updated_at": "2026-01-06T14:27:38.630Z",
       "due_date": "2026-01-06T10:00:00.000Z",
       "source_event": "order_updated"
     },
@@ -455,8 +455,7 @@
   "summary": {
     "orders_count": 28,
     "by_status": {
-      "EN_ROUTE_TO_CUSTOMER": 1,
-      "COMPLETED": 9,
+      "COMPLETED": 10,
       "PROCESSING": 3,
       "READY_FOR_DRIVER_PICKUP": 1,
       "READY_FOR_PICKUP": 14
