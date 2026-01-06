@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T23:24:15.040Z",
+  "generated_at": "2026-01-06T23:46:39.245Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5561736",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "651964",
+      "customer_name": "SAL BUSCEMI",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 3428,
+      "created_at": "2026-01-04T00:08:50.920Z",
+      "placed_at": "2026-01-04T00:08:50.920Z",
+      "updated_at": "2026-01-06T23:45:30.158Z",
+      "due_date": "2026-01-05T00:08:50.976Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5564800",
       "status": "EN_ROUTE_TO_CUSTOMER",
@@ -597,15 +613,15 @@
     }
   ],
   "summary": {
-    "orders_count": 37,
+    "orders_count": 38,
     "by_status": {
+      "COMPLETED": 15,
       "EN_ROUTE_TO_CUSTOMER": 1,
-      "COMPLETED": 14,
       "SUBMITTED": 1,
       "READY_FOR_PICKUP": 14,
       "PROCESSING": 6,
       "READY_FOR_DRIVER_PICKUP": 1
     },
-    "total_cents": 178077
+    "total_cents": 181505
   }
 }
