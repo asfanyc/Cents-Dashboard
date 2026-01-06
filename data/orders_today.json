@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T16:01:57.521Z",
+  "generated_at": "2026-01-06T16:04:55.898Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5550457",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "1126512",
+      "customer_name": "Lida Tas",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2000,
+      "created_at": "2026-01-02T20:10:13.452Z",
+      "placed_at": "2026-01-02T20:10:13.452Z",
+      "updated_at": "2026-01-06T16:03:43.025Z",
+      "due_date": "2026-01-05T20:10:13.499Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5577500",
       "status": "PROCESSING",
@@ -292,22 +308,6 @@
       "source_event": "order_updated"
     },
     {
-      "id": "5550457",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1126512",
-      "customer_name": "Lida Tas",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 2000,
-      "created_at": "2026-01-02T20:10:13.452Z",
-      "placed_at": "2026-01-02T20:10:13.452Z",
-      "updated_at": "2026-01-06T03:35:44.836Z",
-      "due_date": "2026-01-05T20:10:13.499Z",
-      "source_event": "order_updated"
-    },
-    {
       "id": "5519056",
       "status": "READY_FOR_PICKUP",
       "store_id": "unknown",
@@ -471,8 +471,8 @@
   "summary": {
     "orders_count": 29,
     "by_status": {
-      "PROCESSING": 2,
       "READY_FOR_PICKUP": 15,
+      "PROCESSING": 2,
       "READY_FOR_DRIVER_PICKUP": 2,
       "COMPLETED": 10
     },
