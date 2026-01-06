@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T17:41:43.066Z",
+  "generated_at": "2026-01-06T19:19:51.098Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5578134",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1233359",
+      "customer_name": "Benny Benny",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 7028,
+      "created_at": "2026-01-05T21:31:17.118Z",
+      "placed_at": "2026-01-05T21:31:17.118Z",
+      "updated_at": "2026-01-06T19:18:42.537Z",
+      "due_date": "2026-01-06T21:31:17.192Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5582435",
       "status": "PROCESSING",
@@ -257,22 +273,6 @@
       "placed_at": "2026-01-05T23:33:57.326Z",
       "updated_at": "2026-01-06T03:46:18.621Z",
       "due_date": "2026-01-06T23:33:57.369Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5578134",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1233359",
-      "customer_name": "Benny Benny",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 7028,
-      "created_at": "2026-01-05T21:31:17.118Z",
-      "placed_at": "2026-01-05T21:31:17.118Z",
-      "updated_at": "2026-01-06T03:45:49.343Z",
-      "due_date": "2026-01-06T21:31:17.192Z",
       "source_event": "order_updated"
     },
     {
@@ -551,9 +551,9 @@
   "summary": {
     "orders_count": 34,
     "by_status": {
+      "COMPLETED": 13,
       "PROCESSING": 6,
-      "COMPLETED": 12,
-      "READY_FOR_PICKUP": 14,
+      "READY_FOR_PICKUP": 13,
       "READY_FOR_DRIVER_PICKUP": 2
     },
     "total_cents": 165484
