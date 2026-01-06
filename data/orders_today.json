@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T23:13:54.512Z",
+  "generated_at": "2026-01-06T23:16:09.364Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5564800",
+      "status": "EN_ROUTE_TO_CUSTOMER",
+      "store_id": "unknown",
+      "customer_id": "1411078",
+      "customer_name": "SHAUGHNA BISHOP",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 15992,
+      "created_at": "2026-01-04T17:00:16.951Z",
+      "placed_at": "2026-01-04T17:00:16.951Z",
+      "updated_at": "2026-01-06T23:14:59.321Z",
+      "due_date": "2026-01-06T22:30:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5571301",
       "status": "COMPLETED",
@@ -17,22 +33,6 @@
       "placed_at": "2026-01-05T12:31:53.624Z",
       "updated_at": "2026-01-06T23:11:50.266Z",
       "due_date": "2026-01-06T12:31:53.665Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5564800",
-      "status": "EN_ROUTE_TO_CUSTOMER",
-      "store_id": "unknown",
-      "customer_id": "1411078",
-      "customer_name": "SHAUGHNA BISHOP",
-      "pickup_type": "DELIVERY",
-      "service": "ONLINE",
-      "type": "ONLINE",
-      "total_cents": 15992,
-      "created_at": "2026-01-04T17:00:16.951Z",
-      "placed_at": "2026-01-04T17:00:16.951Z",
-      "updated_at": "2026-01-06T23:03:09.246Z",
-      "due_date": "2026-01-06T22:30:00.000Z",
       "source_event": "order_updated"
     },
     {
@@ -599,8 +599,8 @@
   "summary": {
     "orders_count": 37,
     "by_status": {
-      "COMPLETED": 14,
       "EN_ROUTE_TO_CUSTOMER": 1,
+      "COMPLETED": 14,
       "SUBMITTED": 1,
       "READY_FOR_PICKUP": 14,
       "PROCESSING": 6,
