@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T03:43:34.063Z",
+  "generated_at": "2026-01-06T03:44:34.523Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5525685",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "1839306",
+      "customer_name": "Kathy Pedroza",
+      "pickup_type": "IN_STORE_PICKUP",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 1800,
+      "created_at": "2025-12-30T14:10:41.692Z",
+      "placed_at": "2025-12-30T14:10:41.692Z",
+      "updated_at": "2026-01-06T03:40:05.395Z",
+      "due_date": "2026-01-02T14:10:41.733Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5548337",
       "status": "READY_FOR_PICKUP",
@@ -65,22 +81,6 @@
       "placed_at": "2025-12-30T18:26:45.990Z",
       "updated_at": "2026-01-06T03:36:38.811Z",
       "due_date": "2026-01-02T18:26:46.041Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5525685",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1839306",
-      "customer_name": "Kathy Pedroza",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 1800,
-      "created_at": "2025-12-30T14:10:41.692Z",
-      "placed_at": "2025-12-30T14:10:41.692Z",
-      "updated_at": "2026-01-06T03:36:26.223Z",
-      "due_date": "2026-01-02T14:10:41.733Z",
       "source_event": "order_updated"
     },
     {
