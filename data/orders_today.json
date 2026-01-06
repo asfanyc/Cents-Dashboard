@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T23:04:18.259Z",
+  "generated_at": "2026-01-06T23:13:54.512Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5571301",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "667575",
+      "customer_name": "Shea Shea",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2865,
+      "created_at": "2026-01-05T12:31:53.624Z",
+      "placed_at": "2026-01-05T12:31:53.624Z",
+      "updated_at": "2026-01-06T23:11:50.266Z",
+      "due_date": "2026-01-06T12:31:53.665Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5564800",
       "status": "EN_ROUTE_TO_CUSTOMER",
@@ -581,15 +597,15 @@
     }
   ],
   "summary": {
-    "orders_count": 36,
+    "orders_count": 37,
     "by_status": {
+      "COMPLETED": 14,
       "EN_ROUTE_TO_CUSTOMER": 1,
       "SUBMITTED": 1,
       "READY_FOR_PICKUP": 14,
       "PROCESSING": 6,
-      "COMPLETED": 13,
       "READY_FOR_DRIVER_PICKUP": 1
     },
-    "total_cents": 175212
+    "total_cents": 178077
   }
 }
