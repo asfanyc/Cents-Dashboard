@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-06T00:39:23.201Z",
+  "generated_at": "2026-01-06T00:50:22.027Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5569590",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1019322",
+      "customer_name": "Domingo Sanchez",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2070,
+      "created_at": "2026-01-04T22:05:14.377Z",
+      "placed_at": "2026-01-04T22:05:14.377Z",
+      "updated_at": "2026-01-06T00:49:12.288Z",
+      "due_date": "2026-01-05T22:05:14.444Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5564800",
       "status": "PROCESSING",
@@ -117,11 +133,11 @@
     }
   ],
   "summary": {
-    "orders_count": 7,
+    "orders_count": 8,
     "by_status": {
-      "PROCESSING": 2,
-      "COMPLETED": 5
+      "COMPLETED": 6,
+      "PROCESSING": 2
     },
-    "total_cents": 34695
+    "total_cents": 36765
   }
 }
