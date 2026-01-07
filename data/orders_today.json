@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T23:15:10.021Z",
+  "generated_at": "2026-01-07T23:21:17.431Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5588817",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "670647",
+      "customer_name": "Dee Umland",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2317,
+      "created_at": "2026-01-07T13:36:05.329Z",
+      "placed_at": "2026-01-07T13:36:05.329Z",
+      "updated_at": "2026-01-07T23:20:08.577Z",
+      "due_date": "2026-01-08T13:35:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5594414",
       "status": "DRIVER_PICKED_UP_FROM_CUSTOMER",
@@ -306,22 +322,6 @@
       "updated_at": "2026-01-07T18:01:57.868Z",
       "due_date": "2026-01-08T18:01:57.940Z",
       "source_event": "order_created"
-    },
-    {
-      "id": "5588817",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "670647",
-      "customer_name": "Dee Umland",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 2317,
-      "created_at": "2026-01-07T13:36:05.329Z",
-      "placed_at": "2026-01-07T13:36:05.329Z",
-      "updated_at": "2026-01-07T17:16:27.467Z",
-      "due_date": "2026-01-08T13:35:00.000Z",
-      "source_event": "order_updated"
     },
     {
       "id": "5590814",
@@ -967,12 +967,12 @@
   "summary": {
     "orders_count": 60,
     "by_status": {
+      "COMPLETED": 30,
       "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
-      "COMPLETED": 29,
       "PROCESSING": 8,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
-      "READY_FOR_PICKUP": 17,
+      "READY_FOR_PICKUP": 16,
       "SUBMITTED": 2
     },
     "total_cents": 279229
