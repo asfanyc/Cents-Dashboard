@@ -1,11 +1,11 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T23:35:23.068Z",
+  "generated_at": "2026-01-07T23:37:51.103Z",
   "source": "cents_webhooks",
   "orders": [
     {
       "id": "5594414",
-      "status": "DRIVER_PICKED_UP_FROM_CUSTOMER",
+      "status": "READY_FOR_INTAKE",
       "store_id": "unknown",
       "customer_id": "1866573",
       "customer_name": "Isaiah Crum",
@@ -15,7 +15,7 @@
       "total_cents": 5250,
       "created_at": "2026-01-07T22:19:44.404Z",
       "placed_at": "2026-01-07T22:19:44.404Z",
-      "updated_at": "2026-01-07T23:34:14.052Z",
+      "updated_at": "2026-01-07T23:36:42.027Z",
       "due_date": "2026-01-09T00:30:00.000Z",
       "source_event": "order_updated"
     },
@@ -967,11 +967,10 @@
   "summary": {
     "orders_count": 60,
     "by_status": {
-      "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
+      "READY_FOR_INTAKE": 2,
       "COMPLETED": 30,
       "PROCESSING": 8,
       "READY_FOR_DRIVER_PICKUP": 2,
-      "READY_FOR_INTAKE": 1,
       "READY_FOR_PICKUP": 16,
       "SUBMITTED": 2
     },
