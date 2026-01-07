@@ -1,11 +1,11 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T18:32:34.508Z",
+  "generated_at": "2026-01-07T18:33:34.393Z",
   "source": "cents_webhooks",
   "orders": [
     {
       "id": "5564585",
-      "status": "READY_FOR_PICKUP",
+      "status": "COMPLETED",
       "store_id": "unknown",
       "customer_id": "1549161",
       "customer_name": "Richard Bowie",
@@ -15,7 +15,7 @@
       "total_cents": 1770,
       "created_at": "2026-01-04T16:45:47.209Z",
       "placed_at": "2026-01-04T16:45:47.209Z",
-      "updated_at": "2026-01-07T18:31:24.899Z",
+      "updated_at": "2026-01-07T18:31:35.985Z",
       "due_date": "2026-01-05T16:45:47.264Z",
       "source_event": "order_updated"
     },
@@ -871,9 +871,9 @@
   "summary": {
     "orders_count": 54,
     "by_status": {
-      "READY_FOR_PICKUP": 21,
-      "COMPLETED": 22,
+      "COMPLETED": 23,
       "PROCESSING": 5,
+      "READY_FOR_PICKUP": 20,
       "SUBMITTED": 2,
       "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
       "EN_ROUTE_TO_CUSTOMER": 1,
