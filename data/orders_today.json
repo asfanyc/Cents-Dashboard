@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T21:53:40.313Z",
+  "generated_at": "2026-01-07T22:02:39.379Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5594266",
+      "status": "PROCESSING",
+      "store_id": "unknown",
+      "customer_id": "671199",
+      "customer_name": "Dom  Dom",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2363,
+      "created_at": "2026-01-07T22:01:30.663Z",
+      "placed_at": "2026-01-07T22:01:30.663Z",
+      "updated_at": "2026-01-07T22:01:30.663Z",
+      "due_date": "2026-01-08T22:01:30.693Z",
+      "source_event": "order_created"
+    },
     {
       "id": "5579218",
       "status": "COMPLETED",
@@ -917,16 +933,16 @@
     }
   ],
   "summary": {
-    "orders_count": 57,
+    "orders_count": 58,
     "by_status": {
+      "PROCESSING": 7,
       "COMPLETED": 25,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
       "READY_FOR_PICKUP": 20,
-      "PROCESSING": 6,
       "SUBMITTED": 2,
       "EN_ROUTE_TO_CUSTOMER": 1
     },
-    "total_cents": 269824
+    "total_cents": 272187
   }
 }
