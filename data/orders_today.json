@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T21:17:52.230Z",
+  "generated_at": "2026-01-07T21:32:28.154Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5575929",
+      "status": "READY_FOR_DRIVER_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "1649973",
+      "customer_name": "Allison Feinstein",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 41000,
+      "created_at": "2026-01-05T18:31:14.009Z",
+      "placed_at": "2026-01-05T18:31:14.009Z",
+      "updated_at": "2026-01-07T21:31:12.820Z",
+      "due_date": "2026-01-09T12:00:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5590049",
       "status": "READY_FOR_PICKUP",
@@ -33,22 +49,6 @@
       "placed_at": "2026-01-07T15:51:30.432Z",
       "updated_at": "2026-01-07T21:14:12.206Z",
       "due_date": "2026-01-08T15:51:30.499Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5575929",
-      "status": "READY_FOR_DRIVER_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1649973",
-      "customer_name": "Allison Feinstein",
-      "pickup_type": "DELIVERY",
-      "service": "ONLINE",
-      "type": "ONLINE",
-      "total_cents": 16000,
-      "created_at": "2026-01-05T18:31:14.009Z",
-      "placed_at": "2026-01-05T18:31:14.009Z",
-      "updated_at": "2026-01-07T21:11:38.011Z",
-      "due_date": "2026-01-09T12:00:00.000Z",
       "source_event": "order_updated"
     },
     {
@@ -919,14 +919,14 @@
   "summary": {
     "orders_count": 57,
     "by_status": {
-      "READY_FOR_PICKUP": 21,
       "READY_FOR_DRIVER_PICKUP": 2,
+      "READY_FOR_PICKUP": 21,
       "PROCESSING": 6,
       "COMPLETED": 24,
       "SUBMITTED": 2,
       "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
       "EN_ROUTE_TO_CUSTOMER": 1
     },
-    "total_cents": 244824
+    "total_cents": 269824
   }
 }
