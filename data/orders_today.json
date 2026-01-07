@@ -1,6 +1,6 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T21:33:28.094Z",
+  "generated_at": "2026-01-07T21:34:28.178Z",
   "source": "cents_webhooks",
   "orders": [
     {
@@ -12,10 +12,10 @@
       "pickup_type": "DELIVERY",
       "service": "ONLINE",
       "type": "ONLINE",
-      "total_cents": 41000,
+      "total_cents": 44000,
       "created_at": "2026-01-05T18:31:14.009Z",
       "placed_at": "2026-01-05T18:31:14.009Z",
-      "updated_at": "2026-01-07T21:31:22.904Z",
+      "updated_at": "2026-01-07T21:32:27.312Z",
       "due_date": "2026-01-09T12:00:00.000Z",
       "source_event": "order_updated"
     },
@@ -927,6 +927,6 @@
       "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
       "EN_ROUTE_TO_CUSTOMER": 1
     },
-    "total_cents": 269824
+    "total_cents": 272824
   }
 }
