@@ -1,11 +1,11 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T22:06:26.108Z",
+  "generated_at": "2026-01-07T22:07:26.588Z",
   "source": "cents_webhooks",
   "orders": [
     {
       "id": "5576933",
-      "status": "READY_FOR_PICKUP",
+      "status": "COMPLETED",
       "store_id": "unknown",
       "customer_id": "651603",
       "customer_name": "DANIEL GUERRERO",
@@ -15,7 +15,7 @@
       "total_cents": 1620,
       "created_at": "2026-01-05T19:48:04.002Z",
       "placed_at": "2026-01-05T19:48:04.002Z",
-      "updated_at": "2026-01-07T22:05:17.520Z",
+      "updated_at": "2026-01-07T22:05:58.004Z",
       "due_date": "2026-01-06T19:47:00.000Z",
       "source_event": "order_updated"
     },
@@ -935,11 +935,11 @@
   "summary": {
     "orders_count": 58,
     "by_status": {
-      "READY_FOR_PICKUP": 20,
+      "COMPLETED": 26,
       "PROCESSING": 7,
-      "COMPLETED": 25,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
+      "READY_FOR_PICKUP": 19,
       "SUBMITTED": 2,
       "EN_ROUTE_TO_CUSTOMER": 1
     },
