@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T02:26:32.636Z",
+  "generated_at": "2026-01-07T13:37:17.215Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5588817",
+      "status": "PROCESSING",
+      "store_id": "unknown",
+      "customer_id": "670647",
+      "customer_name": "Dee Umland",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2317,
+      "created_at": "2026-01-07T13:36:05.329Z",
+      "placed_at": "2026-01-07T13:36:05.329Z",
+      "updated_at": "2026-01-07T13:36:05.632Z",
+      "due_date": "2026-01-08T13:35:00.000Z",
+      "source_event": "order_created"
+    },
     {
       "id": "5585198",
       "status": "READY_FOR_PICKUP",
@@ -741,14 +757,14 @@
     }
   ],
   "summary": {
-    "orders_count": 46,
+    "orders_count": 47,
     "by_status": {
+      "PROCESSING": 4,
       "READY_FOR_PICKUP": 21,
       "SUBMITTED": 2,
       "READY_FOR_DRIVER_PICKUP": 3,
-      "PROCESSING": 3,
       "COMPLETED": 17
     },
-    "total_cents": 208130
+    "total_cents": 210447
   }
 }
