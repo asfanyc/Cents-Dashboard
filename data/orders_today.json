@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T22:07:26.588Z",
+  "generated_at": "2026-01-07T22:08:26.064Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5585198",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1666250",
+      "customer_name": "Marley Rizzuti",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 4478,
+      "created_at": "2026-01-06T19:30:22.372Z",
+      "placed_at": "2026-01-06T19:30:22.372Z",
+      "updated_at": "2026-01-07T22:06:54.433Z",
+      "due_date": "2026-01-07T19:30:22.561Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5576933",
       "status": "COMPLETED",
@@ -353,22 +369,6 @@
       "placed_at": "2026-01-07T00:10:40.925Z",
       "updated_at": "2026-01-07T14:25:01.171Z",
       "due_date": "2026-01-08T00:10:40.969Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5585198",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1666250",
-      "customer_name": "Marley Rizzuti",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 4478,
-      "created_at": "2026-01-06T19:30:22.372Z",
-      "placed_at": "2026-01-06T19:30:22.372Z",
-      "updated_at": "2026-01-07T02:25:23.277Z",
-      "due_date": "2026-01-07T19:30:22.561Z",
       "source_event": "order_updated"
     },
     {
@@ -935,11 +935,11 @@
   "summary": {
     "orders_count": 58,
     "by_status": {
-      "COMPLETED": 26,
+      "COMPLETED": 27,
       "PROCESSING": 7,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
-      "READY_FOR_PICKUP": 19,
+      "READY_FOR_PICKUP": 18,
       "SUBMITTED": 2,
       "EN_ROUTE_TO_CUSTOMER": 1
     },
