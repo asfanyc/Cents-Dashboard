@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T21:36:52.378Z",
+  "generated_at": "2026-01-07T21:37:34.557Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5587993",
+      "status": "READY_FOR_INTAKE",
+      "store_id": "unknown",
+      "customer_id": "1864135",
+      "customer_name": "Maryann Guidice",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 5250,
+      "created_at": "2026-01-07T01:39:22.295Z",
+      "placed_at": "2026-01-07T01:39:22.295Z",
+      "updated_at": "2026-01-07T21:36:04.504Z",
+      "due_date": "2026-01-08T10:00:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5575929",
       "status": "READY_FOR_DRIVER_PICKUP",
@@ -193,22 +209,6 @@
       "placed_at": "2026-01-07T17:01:02.972Z",
       "updated_at": "2026-01-07T17:01:05.331Z",
       "due_date": "2026-01-09T11:30:00.000Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5587993",
-      "status": "DRIVER_PICKED_UP_FROM_CUSTOMER",
-      "store_id": "unknown",
-      "customer_id": "1864135",
-      "customer_name": "Maryann Guidice",
-      "pickup_type": "DELIVERY",
-      "service": "ONLINE",
-      "type": "ONLINE",
-      "total_cents": 5250,
-      "created_at": "2026-01-07T01:39:22.295Z",
-      "placed_at": "2026-01-07T01:39:22.295Z",
-      "updated_at": "2026-01-07T16:12:22.254Z",
-      "due_date": "2026-01-08T10:00:00.000Z",
       "source_event": "order_updated"
     },
     {
@@ -919,12 +919,12 @@
   "summary": {
     "orders_count": 57,
     "by_status": {
+      "READY_FOR_INTAKE": 1,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_PICKUP": 21,
       "PROCESSING": 6,
       "COMPLETED": 24,
       "SUBMITTED": 2,
-      "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
       "EN_ROUTE_TO_CUSTOMER": 1
     },
     "total_cents": 272824
