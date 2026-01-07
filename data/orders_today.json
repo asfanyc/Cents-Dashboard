@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T22:21:53.629Z",
+  "generated_at": "2026-01-07T22:25:33.384Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5577500",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1034454",
+      "customer_name": "Conor Leeds",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 5250,
+      "created_at": "2026-01-05T20:30:20.691Z",
+      "placed_at": "2026-01-05T20:30:20.691Z",
+      "updated_at": "2026-01-07T22:24:24.431Z",
+      "due_date": "2026-01-07T10:00:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5594414",
       "status": "SUBMITTED",
@@ -305,22 +321,6 @@
       "placed_at": "2026-01-07T17:01:02.972Z",
       "updated_at": "2026-01-07T17:01:05.331Z",
       "due_date": "2026-01-09T11:30:00.000Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5577500",
-      "status": "EN_ROUTE_TO_CUSTOMER",
-      "store_id": "unknown",
-      "customer_id": "1034454",
-      "customer_name": "Conor Leeds",
-      "pickup_type": "DELIVERY",
-      "service": "ONLINE",
-      "type": "ONLINE",
-      "total_cents": 5250,
-      "created_at": "2026-01-05T20:30:20.691Z",
-      "placed_at": "2026-01-05T20:30:20.691Z",
-      "updated_at": "2026-01-07T16:02:51.246Z",
-      "due_date": "2026-01-07T10:00:00.000Z",
       "source_event": "order_updated"
     },
     {
@@ -967,13 +967,12 @@
   "summary": {
     "orders_count": 60,
     "by_status": {
+      "COMPLETED": 28,
       "SUBMITTED": 3,
       "PROCESSING": 8,
-      "COMPLETED": 27,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
-      "READY_FOR_PICKUP": 18,
-      "EN_ROUTE_TO_CUSTOMER": 1
+      "READY_FOR_PICKUP": 18
     },
     "total_cents": 279229
   }
