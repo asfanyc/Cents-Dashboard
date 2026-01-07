@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T01:07:19.819Z",
+  "generated_at": "2026-01-07T01:08:21.038Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5559840",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "1035660",
+      "customer_name": "MALCOLM MALCOLM",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 500,
+      "created_at": "2026-01-03T20:38:22.844Z",
+      "placed_at": "2026-01-03T20:38:22.844Z",
+      "updated_at": "2026-01-07T01:05:45.897Z",
+      "due_date": "2026-01-06T20:38:22.882Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5554902",
       "status": "READY_FOR_PICKUP",
@@ -693,14 +709,14 @@
     }
   ],
   "summary": {
-    "orders_count": 43,
+    "orders_count": 44,
     "by_status": {
-      "READY_FOR_PICKUP": 17,
+      "READY_FOR_PICKUP": 18,
       "READY_FOR_DRIVER_PICKUP": 3,
       "PROCESSING": 5,
       "COMPLETED": 17,
       "SUBMITTED": 1
     },
-    "total_cents": 199380
+    "total_cents": 199880
   }
 }
