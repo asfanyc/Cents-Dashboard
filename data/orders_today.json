@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T21:39:28.480Z",
+  "generated_at": "2026-01-07T21:53:40.313Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5579218",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1619524",
+      "customer_name": "Maria Hurtado",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 3023,
+      "created_at": "2026-01-05T23:33:57.326Z",
+      "placed_at": "2026-01-05T23:33:57.326Z",
+      "updated_at": "2026-01-07T21:52:22.264Z",
+      "due_date": "2026-01-06T23:33:57.369Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5575929",
       "status": "READY_FOR_DRIVER_PICKUP",
@@ -660,22 +676,6 @@
       "source_event": "order_updated"
     },
     {
-      "id": "5579218",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1619524",
-      "customer_name": "Maria Hurtado",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 3023,
-      "created_at": "2026-01-05T23:33:57.326Z",
-      "placed_at": "2026-01-05T23:33:57.326Z",
-      "updated_at": "2026-01-06T03:46:18.621Z",
-      "due_date": "2026-01-06T23:33:57.369Z",
-      "source_event": "order_updated"
-    },
-    {
       "id": "5576933",
       "status": "READY_FOR_PICKUP",
       "store_id": "unknown",
@@ -919,11 +919,11 @@
   "summary": {
     "orders_count": 57,
     "by_status": {
+      "COMPLETED": 25,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
-      "READY_FOR_PICKUP": 21,
+      "READY_FOR_PICKUP": 20,
       "PROCESSING": 6,
-      "COMPLETED": 24,
       "SUBMITTED": 2,
       "EN_ROUTE_TO_CUSTOMER": 1
     },
