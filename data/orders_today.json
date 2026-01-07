@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-07T19:53:19.037Z",
+  "generated_at": "2026-01-07T20:10:49.060Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5548337",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1856128",
+      "customer_name": "Charles Taylor",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 4500,
+      "created_at": "2026-01-02T17:41:20.270Z",
+      "placed_at": "2026-01-02T17:41:20.270Z",
+      "updated_at": "2026-01-07T20:09:41.004Z",
+      "due_date": "2026-01-05T17:40:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5593050",
       "status": "PROCESSING",
@@ -692,22 +708,6 @@
       "source_event": "order_updated"
     },
     {
-      "id": "5548337",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1856128",
-      "customer_name": "Charles Taylor",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 4500,
-      "created_at": "2026-01-02T17:41:20.270Z",
-      "placed_at": "2026-01-02T17:41:20.270Z",
-      "updated_at": "2026-01-06T03:37:22.101Z",
-      "due_date": "2026-01-05T17:40:00.000Z",
-      "source_event": "order_updated"
-    },
-    {
       "id": "5533687",
       "status": "READY_FOR_PICKUP",
       "store_id": "unknown",
@@ -903,9 +903,9 @@
   "summary": {
     "orders_count": 56,
     "by_status": {
+      "COMPLETED": 24,
       "PROCESSING": 7,
-      "COMPLETED": 23,
-      "READY_FOR_PICKUP": 20,
+      "READY_FOR_PICKUP": 19,
       "SUBMITTED": 2,
       "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
       "EN_ROUTE_TO_CUSTOMER": 1,
