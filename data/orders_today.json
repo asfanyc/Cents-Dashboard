@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T18:27:35.088Z",
+  "generated_at": "2026-01-08T18:55:56.083Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5596371",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "651655",
+      "customer_name": "Humberto Antonio",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2273,
+      "created_at": "2026-01-08T13:38:08.000Z",
+      "placed_at": "2026-01-08T13:38:08.000Z",
+      "updated_at": "2026-01-08T18:54:47.464Z",
+      "due_date": "2026-01-09T13:38:08.041Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5599606",
       "status": "PROCESSING",
@@ -33,22 +49,6 @@
       "placed_at": "2026-01-08T18:13:03.039Z",
       "updated_at": "2026-01-08T18:13:03.277Z",
       "due_date": "2026-01-09T18:12:00.000Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5596371",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "651655",
-      "customer_name": "Humberto Antonio",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 2273,
-      "created_at": "2026-01-08T13:38:08.000Z",
-      "placed_at": "2026-01-08T13:38:08.000Z",
-      "updated_at": "2026-01-08T17:59:16.901Z",
-      "due_date": "2026-01-09T13:38:08.041Z",
       "source_event": "order_updated"
     },
     {
@@ -1175,8 +1175,8 @@
   "summary": {
     "orders_count": 73,
     "by_status": {
-      "PROCESSING": 11,
       "READY_FOR_PICKUP": 16,
+      "PROCESSING": 11,
       "COMPLETED": 39,
       "CANCELLED": 2,
       "SUBMITTED": 2,
