@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T17:04:30.415Z",
+  "generated_at": "2026-01-08T17:36:16.893Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5551388",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1048135",
+      "customer_name": "John Codling",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 3615,
+      "created_at": "2026-01-02T21:29:05.032Z",
+      "placed_at": "2026-01-02T21:29:05.032Z",
+      "updated_at": "2026-01-08T17:35:06.242Z",
+      "due_date": "2026-01-03T21:29:05.068Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5598509",
       "status": "PROCESSING",
@@ -1125,15 +1141,15 @@
     }
   ],
   "summary": {
-    "orders_count": 70,
+    "orders_count": 71,
     "by_status": {
+      "COMPLETED": 39,
       "PROCESSING": 10,
       "READY_FOR_PICKUP": 15,
       "CANCELLED": 2,
-      "COMPLETED": 38,
       "SUBMITTED": 2,
       "READY_FOR_DRIVER_PICKUP": 3
     },
-    "total_cents": 331374
+    "total_cents": 334989
   }
 }
