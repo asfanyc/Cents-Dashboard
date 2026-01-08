@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T20:52:16.438Z",
+  "generated_at": "2026-01-08T20:56:09.901Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5601088",
+      "status": "PROCESSING",
+      "store_id": "unknown",
+      "customer_id": "1839503",
+      "customer_name": "Kelley Walker",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 1500,
+      "created_at": "2026-01-08T20:55:01.607Z",
+      "placed_at": "2026-01-08T20:55:01.607Z",
+      "updated_at": "2026-01-08T20:55:01.851Z",
+      "due_date": "2026-01-09T20:54:00.000Z",
+      "source_event": "order_created"
+    },
     {
       "id": "5557404",
       "status": "COMPLETED",
@@ -1221,16 +1237,16 @@
     }
   ],
   "summary": {
-    "orders_count": 76,
+    "orders_count": 77,
     "by_status": {
+      "PROCESSING": 12,
       "COMPLETED": 42,
       "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
       "SUBMITTED": 1,
       "READY_FOR_PICKUP": 16,
-      "PROCESSING": 11,
       "CANCELLED": 2,
       "READY_FOR_DRIVER_PICKUP": 3
     },
-    "total_cents": 351352
+    "total_cents": 352852
   }
 }
