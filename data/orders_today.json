@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T01:27:59.142Z",
+  "generated_at": "2026-01-08T01:36:26.194Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5580396",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "1863670",
+      "customer_name": "Marta Nasda",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 10088,
+      "created_at": "2026-01-06T12:23:40.882Z",
+      "placed_at": "2026-01-06T12:23:40.882Z",
+      "updated_at": "2026-01-08T01:35:17.096Z",
+      "due_date": "2026-01-07T12:23:40.989Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5593050",
       "status": "COMPLETED",
@@ -596,22 +612,6 @@
       "source_event": "order_updated"
     },
     {
-      "id": "5580396",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1863670",
-      "customer_name": "Marta Nasda",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 10088,
-      "created_at": "2026-01-06T12:23:40.882Z",
-      "placed_at": "2026-01-06T12:23:40.882Z",
-      "updated_at": "2026-01-06T20:21:01.311Z",
-      "due_date": "2026-01-07T12:23:40.989Z",
-      "source_event": "order_updated"
-    },
-    {
       "id": "5578134",
       "status": "COMPLETED",
       "store_id": "unknown",
@@ -983,8 +983,8 @@
   "summary": {
     "orders_count": 61,
     "by_status": {
-      "COMPLETED": 32,
       "READY_FOR_PICKUP": 17,
+      "COMPLETED": 32,
       "PROCESSING": 7,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
