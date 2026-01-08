@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T18:00:32.423Z",
+  "generated_at": "2026-01-08T18:14:12.147Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5599491",
+      "status": "PROCESSING",
+      "store_id": "unknown",
+      "customer_id": "652033",
+      "customer_name": "Geovani  Bautista",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2348,
+      "created_at": "2026-01-08T18:13:03.039Z",
+      "placed_at": "2026-01-08T18:13:03.039Z",
+      "updated_at": "2026-01-08T18:13:03.277Z",
+      "due_date": "2026-01-09T18:12:00.000Z",
+      "source_event": "order_created"
+    },
     {
       "id": "5596371",
       "status": "READY_FOR_PICKUP",
@@ -1141,15 +1157,15 @@
     }
   ],
   "summary": {
-    "orders_count": 71,
+    "orders_count": 72,
     "by_status": {
+      "PROCESSING": 10,
       "READY_FOR_PICKUP": 16,
       "COMPLETED": 39,
-      "PROCESSING": 9,
       "CANCELLED": 2,
       "SUBMITTED": 2,
       "READY_FOR_DRIVER_PICKUP": 3
     },
-    "total_cents": 334989
+    "total_cents": 337337
   }
 }
