@@ -1,6 +1,6 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T23:06:27.233Z",
+  "generated_at": "2026-01-08T23:07:27.153Z",
   "source": "cents_webhooks",
   "orders": [
     {
@@ -17,7 +17,7 @@
       "placed_at": "2026-01-08T23:05:18.505Z",
       "updated_at": "2026-01-08T23:05:18.709Z",
       "due_date": "2026-01-12T13:00:00.000Z",
-      "source_event": "order_updated"
+      "source_event": "order_created"
     },
     {
       "id": "5558860",
