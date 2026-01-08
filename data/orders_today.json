@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T01:09:38.126Z",
+  "generated_at": "2026-01-08T01:27:59.142Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5593050",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "651604",
+      "customer_name": "Alex Perez",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 3690,
+      "created_at": "2026-01-07T19:50:50.616Z",
+      "placed_at": "2026-01-07T19:50:50.616Z",
+      "updated_at": "2026-01-08T01:26:50.163Z",
+      "due_date": "2026-01-08T19:50:50.646Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5594342",
       "status": "READY_FOR_PICKUP",
@@ -17,22 +33,6 @@
       "placed_at": "2026-01-07T22:10:12.914Z",
       "updated_at": "2026-01-08T01:08:27.592Z",
       "due_date": "2026-01-08T22:10:12.986Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5593050",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "651604",
-      "customer_name": "Alex Perez",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 3690,
-      "created_at": "2026-01-07T19:50:50.616Z",
-      "placed_at": "2026-01-07T19:50:50.616Z",
-      "updated_at": "2026-01-08T01:07:28.080Z",
-      "due_date": "2026-01-08T19:50:50.646Z",
       "source_event": "order_updated"
     },
     {
@@ -983,9 +983,9 @@
   "summary": {
     "orders_count": 61,
     "by_status": {
-      "READY_FOR_PICKUP": 18,
+      "COMPLETED": 32,
+      "READY_FOR_PICKUP": 17,
       "PROCESSING": 7,
-      "COMPLETED": 31,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
       "SUBMITTED": 2
