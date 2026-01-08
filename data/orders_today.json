@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T01:39:16.955Z",
+  "generated_at": "2026-01-08T01:44:21.192Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5594342",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "707243",
+      "customer_name": "Gabriel G",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 1792,
+      "created_at": "2026-01-07T22:10:12.914Z",
+      "placed_at": "2026-01-07T22:10:12.914Z",
+      "updated_at": "2026-01-08T01:43:12.675Z",
+      "due_date": "2026-01-08T22:10:12.986Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5592305",
       "status": "COMPLETED",
@@ -49,22 +65,6 @@
       "placed_at": "2026-01-07T19:50:50.616Z",
       "updated_at": "2026-01-08T01:26:50.163Z",
       "due_date": "2026-01-08T19:50:50.646Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5594342",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "707243",
-      "customer_name": "Gabriel G",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 1792,
-      "created_at": "2026-01-07T22:10:12.914Z",
-      "placed_at": "2026-01-07T22:10:12.914Z",
-      "updated_at": "2026-01-08T01:08:27.592Z",
-      "due_date": "2026-01-08T22:10:12.986Z",
       "source_event": "order_updated"
     },
     {
@@ -983,11 +983,11 @@
   "summary": {
     "orders_count": 61,
     "by_status": {
-      "COMPLETED": 34,
-      "READY_FOR_PICKUP": 15,
+      "COMPLETED": 35,
       "PROCESSING": 7,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
+      "READY_FOR_PICKUP": 14,
       "SUBMITTED": 2
     },
     "total_cents": 289909
