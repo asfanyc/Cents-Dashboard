@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T01:38:17.276Z",
+  "generated_at": "2026-01-08T01:39:16.955Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5592305",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "668980",
+      "customer_name": "Sean Mooney",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 3600,
+      "created_at": "2026-01-07T18:36:19.714Z",
+      "placed_at": "2026-01-07T18:36:19.714Z",
+      "updated_at": "2026-01-08T01:38:03.230Z",
+      "due_date": "2026-01-08T18:36:19.757Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5580396",
       "status": "COMPLETED",
@@ -49,22 +65,6 @@
       "placed_at": "2026-01-07T22:10:12.914Z",
       "updated_at": "2026-01-08T01:08:27.592Z",
       "due_date": "2026-01-08T22:10:12.986Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5592305",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "668980",
-      "customer_name": "Sean Mooney",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 3600,
-      "created_at": "2026-01-07T18:36:19.714Z",
-      "placed_at": "2026-01-07T18:36:19.714Z",
-      "updated_at": "2026-01-08T00:58:22.994Z",
-      "due_date": "2026-01-08T18:36:19.757Z",
       "source_event": "order_updated"
     },
     {
@@ -983,8 +983,8 @@
   "summary": {
     "orders_count": 61,
     "by_status": {
-      "COMPLETED": 33,
-      "READY_FOR_PICKUP": 16,
+      "COMPLETED": 34,
+      "READY_FOR_PICKUP": 15,
       "PROCESSING": 7,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
