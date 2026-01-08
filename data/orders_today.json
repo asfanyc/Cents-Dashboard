@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T01:44:21.192Z",
+  "generated_at": "2026-01-08T01:55:37.250Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5594266",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "671199",
+      "customer_name": "Dom  Dom",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2363,
+      "created_at": "2026-01-07T22:01:30.663Z",
+      "placed_at": "2026-01-07T22:01:30.663Z",
+      "updated_at": "2026-01-08T01:54:28.413Z",
+      "due_date": "2026-01-08T22:01:30.693Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5594342",
       "status": "COMPLETED",
@@ -193,22 +209,6 @@
       "placed_at": "2026-01-05T19:48:04.002Z",
       "updated_at": "2026-01-07T22:05:58.004Z",
       "due_date": "2026-01-06T19:47:00.000Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5594266",
-      "status": "PROCESSING",
-      "store_id": "unknown",
-      "customer_id": "671199",
-      "customer_name": "Dom  Dom",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 2363,
-      "created_at": "2026-01-07T22:01:30.663Z",
-      "placed_at": "2026-01-07T22:01:30.663Z",
-      "updated_at": "2026-01-07T22:01:44.647Z",
-      "due_date": "2026-01-08T22:01:30.693Z",
       "source_event": "order_updated"
     },
     {
@@ -983,11 +983,11 @@
   "summary": {
     "orders_count": 61,
     "by_status": {
+      "READY_FOR_PICKUP": 15,
       "COMPLETED": 35,
-      "PROCESSING": 7,
+      "PROCESSING": 6,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
-      "READY_FOR_PICKUP": 14,
       "SUBMITTED": 2
     },
     "total_cents": 289909
