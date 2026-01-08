@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T21:40:29.291Z",
+  "generated_at": "2026-01-08T21:56:17.046Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5558860",
+      "status": "EN_ROUTE_TO_CUSTOMER",
+      "store_id": "unknown",
+      "customer_id": "1859284",
+      "customer_name": "Sarah Lowe",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 12050,
+      "created_at": "2026-01-03T19:26:51.735Z",
+      "placed_at": "2026-01-03T19:26:51.735Z",
+      "updated_at": "2026-01-08T21:55:08.979Z",
+      "due_date": "2026-01-08T19:00:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5601449",
       "status": "SUBMITTED",
@@ -820,22 +836,6 @@
       "source_event": "order_updated"
     },
     {
-      "id": "5558860",
-      "status": "READY_FOR_DRIVER_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1859284",
-      "customer_name": "Sarah Lowe",
-      "pickup_type": "DELIVERY",
-      "service": "ONLINE",
-      "type": "ONLINE",
-      "total_cents": 12050,
-      "created_at": "2026-01-03T19:26:51.735Z",
-      "placed_at": "2026-01-03T19:26:51.735Z",
-      "updated_at": "2026-01-07T01:03:04.766Z",
-      "due_date": "2026-01-08T19:00:00.000Z",
-      "source_event": "order_updated"
-    },
-    {
       "id": "5564800",
       "status": "COMPLETED",
       "store_id": "unknown",
@@ -1271,12 +1271,13 @@
   "summary": {
     "orders_count": 79,
     "by_status": {
+      "EN_ROUTE_TO_CUSTOMER": 1,
       "SUBMITTED": 2,
       "PROCESSING": 14,
       "COMPLETED": 42,
       "READY_FOR_PICKUP": 16,
       "CANCELLED": 2,
-      "READY_FOR_DRIVER_PICKUP": 3
+      "READY_FOR_DRIVER_PICKUP": 2
     },
     "total_cents": 366833
   }
