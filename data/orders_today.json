@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T03:20:50.354Z",
+  "generated_at": "2026-01-08T05:54:13.126Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5595854",
+      "status": "SUBMITTED",
+      "store_id": "unknown",
+      "customer_id": "1810546",
+      "customer_name": "Kenneth Hicks",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 8250,
+      "created_at": "2026-01-08T05:53:04.390Z",
+      "placed_at": "2026-01-08T05:53:04.390Z",
+      "updated_at": "2026-01-08T05:53:06.176Z",
+      "due_date": "2026-01-09T19:00:00.000Z",
+      "source_event": "order_created"
+    },
     {
       "id": "5590814",
       "status": "CANCELLED",
@@ -997,16 +1013,16 @@
     }
   ],
   "summary": {
-    "orders_count": 62,
+    "orders_count": 63,
     "by_status": {
+      "SUBMITTED": 2,
       "CANCELLED": 1,
       "READY_FOR_DRIVER_PICKUP": 3,
       "COMPLETED": 37,
       "READY_FOR_PICKUP": 14,
       "PROCESSING": 5,
-      "READY_FOR_INTAKE": 1,
-      "SUBMITTED": 1
+      "READY_FOR_INTAKE": 1
     },
-    "total_cents": 292409
+    "total_cents": 300659
   }
 }
