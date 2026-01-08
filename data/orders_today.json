@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T23:18:27.822Z",
+  "generated_at": "2026-01-08T23:51:10.104Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5595244",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1556597",
+      "customer_name": "leo Duarte",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 8685,
+      "created_at": "2026-01-08T00:29:18.400Z",
+      "placed_at": "2026-01-08T00:29:18.400Z",
+      "updated_at": "2026-01-08T23:49:57.851Z",
+      "due_date": "2026-01-09T00:29:18.446Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5602202",
       "status": "PROCESSING",
@@ -193,22 +209,6 @@
       "placed_at": "2026-01-03T17:52:40.298Z",
       "updated_at": "2026-01-08T20:50:34.128Z",
       "due_date": "2026-01-04T17:52:40.396Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5595244",
-      "status": "READY_FOR_PICKUP",
-      "store_id": "unknown",
-      "customer_id": "1556597",
-      "customer_name": "leo Duarte",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 8685,
-      "created_at": "2026-01-08T00:29:18.400Z",
-      "placed_at": "2026-01-08T00:29:18.400Z",
-      "updated_at": "2026-01-08T19:53:25.975Z",
-      "due_date": "2026-01-09T00:29:18.446Z",
       "source_event": "order_updated"
     },
     {
@@ -1351,11 +1351,11 @@
   "summary": {
     "orders_count": 84,
     "by_status": {
+      "COMPLETED": 44,
       "PROCESSING": 18,
       "CANCELLED": 3,
-      "COMPLETED": 43,
       "SUBMITTED": 2,
-      "READY_FOR_PICKUP": 16,
+      "READY_FOR_PICKUP": 15,
       "READY_FOR_DRIVER_PICKUP": 2
     },
     "total_cents": 385602
