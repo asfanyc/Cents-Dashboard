@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T21:19:36.072Z",
+  "generated_at": "2026-01-08T21:39:29.432Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5601449",
+      "status": "SUBMITTED",
+      "store_id": "unknown",
+      "customer_id": "1006837",
+      "customer_name": "Bailey Stephens",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 5250,
+      "created_at": "2026-01-08T21:38:20.987Z",
+      "placed_at": "2026-01-08T21:38:20.987Z",
+      "updated_at": "2026-01-08T21:38:21.170Z",
+      "due_date": "2026-01-10T19:00:00.000Z",
+      "source_event": "order_created"
+    },
     {
       "id": "5601285",
       "status": "PROCESSING",
@@ -1253,15 +1269,15 @@
     }
   ],
   "summary": {
-    "orders_count": 78,
+    "orders_count": 79,
     "by_status": {
+      "SUBMITTED": 2,
       "PROCESSING": 14,
       "COMPLETED": 42,
-      "SUBMITTED": 1,
       "READY_FOR_PICKUP": 16,
       "CANCELLED": 2,
       "READY_FOR_DRIVER_PICKUP": 3
     },
-    "total_cents": 361583
+    "total_cents": 366833
   }
 }
