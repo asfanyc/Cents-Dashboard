@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T02:12:57.172Z",
+  "generated_at": "2026-01-08T02:41:15.459Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5470754",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1500097",
+      "customer_name": "JESSE BROTTER",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 2500,
+      "created_at": "2025-12-22T02:47:36.030Z",
+      "placed_at": "2025-12-22T02:47:36.030Z",
+      "updated_at": "2026-01-08T02:40:06.016Z",
+      "due_date": "2025-12-25T13:00:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5554037",
       "status": "COMPLETED",
@@ -981,15 +997,15 @@
     }
   ],
   "summary": {
-    "orders_count": 61,
+    "orders_count": 62,
     "by_status": {
-      "COMPLETED": 36,
+      "COMPLETED": 37,
       "READY_FOR_PICKUP": 14,
       "PROCESSING": 6,
       "READY_FOR_DRIVER_PICKUP": 2,
       "READY_FOR_INTAKE": 1,
       "SUBMITTED": 2
     },
-    "total_cents": 289909
+    "total_cents": 292409
   }
 }
