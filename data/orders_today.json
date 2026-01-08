@@ -1,11 +1,11 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-08T23:09:27.889Z",
+  "generated_at": "2026-01-08T23:10:27.030Z",
   "source": "cents_webhooks",
   "orders": [
     {
       "id": "5587059",
-      "status": "DRIVER_PICKED_UP_FROM_CUSTOMER",
+      "status": "READY_FOR_INTAKE",
       "store_id": "unknown",
       "customer_id": "1860917",
       "customer_name": "Krystal Maldonado",
@@ -15,7 +15,7 @@
       "total_cents": 5250,
       "created_at": "2026-01-06T22:48:13.959Z",
       "placed_at": "2026-01-06T22:48:13.959Z",
-      "updated_at": "2026-01-08T23:05:41.172Z",
+      "updated_at": "2026-01-08T23:07:17.310Z",
       "due_date": "2026-01-09T19:00:00.000Z",
       "source_event": "order_updated"
     },
@@ -1303,7 +1303,7 @@
   "summary": {
     "orders_count": 81,
     "by_status": {
-      "DRIVER_PICKED_UP_FROM_CUSTOMER": 1,
+      "READY_FOR_INTAKE": 1,
       "PROCESSING": 15,
       "COMPLETED": 43,
       "SUBMITTED": 2,
