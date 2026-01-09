@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-09T02:01:41.246Z",
+  "generated_at": "2026-01-09T02:06:47.694Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5598509",
+      "status": "COMPLETED",
+      "store_id": "unknown",
+      "customer_id": "1176873",
+      "customer_name": "ALEX FRIEDLONDER",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 4950,
+      "created_at": "2026-01-08T17:02:15.606Z",
+      "placed_at": "2026-01-08T17:02:15.606Z",
+      "updated_at": "2026-01-09T02:05:43.393Z",
+      "due_date": "2026-01-09T17:02:15.660Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5594414",
       "status": "COMPLETED",
@@ -369,22 +385,6 @@
       "placed_at": "2026-01-02T21:29:05.032Z",
       "updated_at": "2026-01-08T17:35:06.242Z",
       "due_date": "2026-01-03T21:29:05.068Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5598509",
-      "status": "PROCESSING",
-      "store_id": "unknown",
-      "customer_id": "1176873",
-      "customer_name": "ALEX FRIEDLONDER",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 4950,
-      "created_at": "2026-01-08T17:02:15.606Z",
-      "placed_at": "2026-01-08T17:02:15.606Z",
-      "updated_at": "2026-01-08T17:02:26.264Z",
-      "due_date": "2026-01-09T17:02:15.660Z",
       "source_event": "order_updated"
     },
     {
@@ -1399,8 +1399,8 @@
   "summary": {
     "orders_count": 87,
     "by_status": {
-      "COMPLETED": 49,
-      "PROCESSING": 17,
+      "COMPLETED": 50,
+      "PROCESSING": 16,
       "CANCELLED": 3,
       "SUBMITTED": 2,
       "READY_FOR_PICKUP": 15,
