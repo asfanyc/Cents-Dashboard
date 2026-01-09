@@ -1,11 +1,11 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-09T01:52:44.255Z",
+  "generated_at": "2026-01-09T02:01:41.246Z",
   "source": "cents_webhooks",
   "orders": [
     {
       "id": "5594414",
-      "status": "EN_ROUTE_TO_CUSTOMER",
+      "status": "COMPLETED",
       "store_id": "unknown",
       "customer_id": "1866573",
       "customer_name": "Isaiah Crum",
@@ -15,7 +15,7 @@
       "total_cents": 7245,
       "created_at": "2026-01-07T22:19:44.404Z",
       "placed_at": "2026-01-07T22:19:44.404Z",
-      "updated_at": "2026-01-09T01:51:35.592Z",
+      "updated_at": "2026-01-09T02:00:31.618Z",
       "due_date": "2026-01-09T00:30:00.000Z",
       "source_event": "order_updated"
     },
@@ -1399,8 +1399,7 @@
   "summary": {
     "orders_count": 87,
     "by_status": {
-      "EN_ROUTE_TO_CUSTOMER": 1,
-      "COMPLETED": 48,
+      "COMPLETED": 49,
       "PROCESSING": 17,
       "CANCELLED": 3,
       "SUBMITTED": 2,
