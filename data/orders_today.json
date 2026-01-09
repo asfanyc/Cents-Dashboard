@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-09T03:43:30.220Z",
+  "generated_at": "2026-01-09T03:44:30.165Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5597037",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "651595",
+      "customer_name": "Stephanie Holmes",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 4793,
+      "created_at": "2026-01-08T14:53:33.986Z",
+      "placed_at": "2026-01-08T14:53:33.986Z",
+      "updated_at": "2026-01-09T03:40:05.962Z",
+      "due_date": "2026-01-09T14:53:34.030Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5597147",
       "status": "READY_FOR_PICKUP",
@@ -466,22 +482,6 @@
       "updated_at": "2026-01-08T15:12:04.275Z",
       "due_date": "2026-01-09T15:12:04.309Z",
       "source_event": "order_created"
-    },
-    {
-      "id": "5597037",
-      "status": "PROCESSING",
-      "store_id": "unknown",
-      "customer_id": "651595",
-      "customer_name": "Stephanie Holmes",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 4793,
-      "created_at": "2026-01-08T14:53:33.986Z",
-      "placed_at": "2026-01-08T14:53:33.986Z",
-      "updated_at": "2026-01-08T14:53:44.200Z",
-      "due_date": "2026-01-09T14:53:34.030Z",
-      "source_event": "order_updated"
     },
     {
       "id": "5594266",
@@ -1399,10 +1399,10 @@
   "summary": {
     "orders_count": 87,
     "by_status": {
-      "READY_FOR_PICKUP": 18,
+      "READY_FOR_PICKUP": 19,
       "READY_FOR_DRIVER_PICKUP": 2,
       "COMPLETED": 50,
-      "PROCESSING": 12,
+      "PROCESSING": 11,
       "CANCELLED": 3,
       "SUBMITTED": 2
     },
