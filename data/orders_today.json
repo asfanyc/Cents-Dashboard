@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-09T01:08:40.235Z",
+  "generated_at": "2026-01-09T01:12:03.432Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5594414",
+      "status": "EN_ROUTE_TO_CUSTOMER",
+      "store_id": "unknown",
+      "customer_id": "1866573",
+      "customer_name": "Isaiah Crum",
+      "pickup_type": "DELIVERY",
+      "service": "ONLINE",
+      "type": "ONLINE",
+      "total_cents": 7245,
+      "created_at": "2026-01-07T22:19:44.404Z",
+      "placed_at": "2026-01-07T22:19:44.404Z",
+      "updated_at": "2026-01-09T01:10:54.851Z",
+      "due_date": "2026-01-09T00:30:00.000Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5551651",
       "status": "COMPLETED",
@@ -17,22 +33,6 @@
       "placed_at": "2026-01-02T21:52:15.313Z",
       "updated_at": "2026-01-09T01:06:20.827Z",
       "due_date": "2026-01-03T21:52:15.364Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5594414",
-      "status": "EN_ROUTE_TO_CUSTOMER",
-      "store_id": "unknown",
-      "customer_id": "1866573",
-      "customer_name": "Isaiah Crum",
-      "pickup_type": "DELIVERY",
-      "service": "ONLINE",
-      "type": "ONLINE",
-      "total_cents": 7245,
-      "created_at": "2026-01-07T22:19:44.404Z",
-      "placed_at": "2026-01-07T22:19:44.404Z",
-      "updated_at": "2026-01-09T01:04:10.263Z",
-      "due_date": "2026-01-09T00:30:00.000Z",
       "source_event": "order_updated"
     },
     {
@@ -1399,8 +1399,8 @@
   "summary": {
     "orders_count": 87,
     "by_status": {
-      "COMPLETED": 48,
       "EN_ROUTE_TO_CUSTOMER": 1,
+      "COMPLETED": 48,
       "PROCESSING": 17,
       "CANCELLED": 3,
       "SUBMITTED": 2,
