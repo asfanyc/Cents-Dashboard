@@ -1,8 +1,24 @@
 {
   "date_et": "2026-01-05",
-  "generated_at": "2026-01-09T00:11:50.103Z",
+  "generated_at": "2026-01-09T00:28:35.484Z",
   "source": "cents_webhooks",
   "orders": [
+    {
+      "id": "5599606",
+      "status": "READY_FOR_PICKUP",
+      "store_id": "unknown",
+      "customer_id": "651964",
+      "customer_name": "SAL BUSCEMI",
+      "pickup_type": "unknown",
+      "service": "SERVICE",
+      "type": "SERVICE",
+      "total_cents": 4490,
+      "created_at": "2026-01-08T18:25:26.339Z",
+      "placed_at": "2026-01-08T18:25:26.339Z",
+      "updated_at": "2026-01-09T00:27:26.560Z",
+      "due_date": "2026-01-09T18:25:26.385Z",
+      "source_event": "order_updated"
+    },
     {
       "id": "5538348",
       "status": "COMPLETED",
@@ -273,22 +289,6 @@
       "placed_at": "2026-01-08T13:38:08.000Z",
       "updated_at": "2026-01-08T18:55:11.268Z",
       "due_date": "2026-01-09T13:38:08.041Z",
-      "source_event": "order_updated"
-    },
-    {
-      "id": "5599606",
-      "status": "PROCESSING",
-      "store_id": "unknown",
-      "customer_id": "651964",
-      "customer_name": "SAL BUSCEMI",
-      "pickup_type": "unknown",
-      "service": "SERVICE",
-      "type": "SERVICE",
-      "total_cents": 4490,
-      "created_at": "2026-01-08T18:25:26.339Z",
-      "placed_at": "2026-01-08T18:25:26.339Z",
-      "updated_at": "2026-01-08T18:25:59.082Z",
-      "due_date": "2026-01-09T18:25:26.385Z",
       "source_event": "order_updated"
     },
     {
@@ -1367,11 +1367,11 @@
   "summary": {
     "orders_count": 85,
     "by_status": {
+      "READY_FOR_PICKUP": 16,
       "COMPLETED": 45,
-      "PROCESSING": 18,
+      "PROCESSING": 17,
       "CANCELLED": 3,
       "SUBMITTED": 2,
-      "READY_FOR_PICKUP": 15,
       "READY_FOR_DRIVER_PICKUP": 2
     },
     "total_cents": 388790
